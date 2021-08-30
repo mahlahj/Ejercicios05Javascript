@@ -121,10 +121,10 @@
                             ¡Y mucho más!<br>
                             Sin embargo, lo principal es la funcionalidad construida sobre el lenguaje JavaScript desde el "lado del cliente".
                         </p>
-                        <a href="#DOM" class="tm-btn">Más Información.</a>
-                    </div>                        
-                </div>                    
-            </div>                
+                        <a href="#DOM" class="tm-btn">DOM</a>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- Que es DOM -->
@@ -173,7 +173,7 @@
                             }
                         </script>
                     </div>
-                    <a href="#APIs" class="tm-btn">Proseguir.</a>
+                    <a href="#APIs" class="tm-btn">API's</a>
                 </div>
             </div>            
         </section>
@@ -222,8 +222,8 @@
                             <b>APIs de dispositivos</b> son básicamente APIs para manipular y recuperar información de dispositivos de forma que sean útiles para aplicaciones web. Otros ejemplos incluyen indicar al usuario de que una actulización útil está disponible en una aplicación web mediante notificaciones de sistema (ver <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API">Notifications API)</a> o la vibración de hardware (ver <a href="https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API">Vibration API)</a>.
                         </li>
                     </ul>
-                    <a href="#quehaceenweb" class="tm-btn">Siguiente.</a>
-                </div>    
+                    <a href="#quehaceenweb" class="tm-btn">JS en Web</a>
+                </div>
             </div>
         </section>
 
@@ -266,6 +266,297 @@
                             <br>También se puede crear un archivo .js en el árbol/carpeta de trabajo donde se coloque todos los scripts a ejecutar.
                         </p>
                         <h2 class="tm-section-title">Comentarios</h2>
+                        <p>
+                            Se pueden escribir entre el código JavaScript, igual que en CSS. Los comentarios de una sola línea se escriben así:
+                            <br><b>// Esto es un comentario</b>
+                            <br>Pero también es posible escribir comentarios en más de una línea, igual que en CSS:
+                            <br><b>/*
+                            <br>Esto es un comentario
+                            <br>de varias líneas.
+                            <br>*/</b>
+                            <a href="#declaracionVariables" class="tm-btn">Variables</a>
+                        </p><br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Declaración Variables JS -->
+        <section class="parallax-window tm-section tm-section-services" id="declaracionVariables" data-parallax="scroll" data-image-src="img/bg-07.jpg">
+            <div class="tm-page-content-width">
+                <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
+                    <div class="tm-content-box-inner">
+                        <h2 class="tm-section-title tm-green-text text-justify">Declaración de variables y características</h2>
+                        <p class="text-justify">
+                            Las Variables son contenedores donde se pueden almacenar valores.
+                            Se realiza con las palabras reservadas <b>var</b>, <b>let</b> o <b>const</b>, seguida del nombre a usar.
+                            <br>Se recomienda más el uso de <b>const</b> y <b>let</b> que de <b>var</b>:
+                        </p>
+                        <div class="media tm-media">
+                            <i class="fa fa-2x fa-code tm-media-icon"></i>
+                            <div class="media-body tm-media-body">
+                                <p class="tm-small-font text-justify">
+                                    <u>let/const/var nombreDeLaVariable;</u>
+                                    <br>Por ejemplo: <b>let name</b>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media tm-media">
+                            <i class="fa fa-2x fa-file tm-media-icon"></i>
+                            <div class="media-body tm-media-body">
+                                <p class="tm-small-font text-justify">
+                                    Se considera una buena práctica escribir siempre un punto y coma después de una declaración, incluso cuando no sea estrictamente necesario. Esta práctica reduce las posibilidades de que se introduzcan errores en el código.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media tm-media">
+                            <i class="fa fa-3x fa-lightbulb-o tm-media-icon"></i>
+                            <div class="media-body tm-media-body">
+                                <p class="tm-small-font text-justify">
+                                    Utilizar variables como nombres simbólicos para valores en la aplicación.
+                                    <br>Los nombres de las variables se llaman identificadores y se ajustan a ciertas reglas.
+                                    <br>Un identificador de JS debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($). Los siguientes caracteres también pueden ser dígitos (0-9), pero dicho nombre variable NUNCA podrá empezar por un número.
+                                    <br>JS distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres "A" - "Z", así como "a" - "z".
+                                    <br>Se pueden utilizar la mayoría de las letras ISO 8859-1 o Unicode como å y ü en los identificadores. También se pueden usar Secuencias de escape Unicode como caracteres en identificadores.
+                                    <br>Algunos ejemplos de nombres legales son <b>Number_hits</b>, <b>temp99</b>, <b>$credit</b> y <b>_name</b>.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-justify">
+                            Una de las ventajas de JS con otros lenguajes es que no se necesita especificar el tipo de dato a asignar a la variable.
+                            <br>JavaScript permite integrar varios tipos de datos diferentes como de tipo texto (strings), numérico, boleano (true/false), arrays, objetos. Sin olvidar los tipos de datos “especiales” como undefined y null.
+                        </p>
+                        <a href="#declaracionCondiones" class="tm-btn">Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Declaración Condiciones JS -->
+        <section class="parallax-window tm-section tm-section-home" id="declaracionCondiones" data-parallax="scroll" data-image-src="img/bg-08.jpg">
+            <div class="tm-page-content-width tm-padding-b">
+                <div class="tm-textbox tm-white-bg">
+                    <h2 class="tm-green-text tm-section-title">Declaración de Condiciones y Características</h2>
+                    <p class="text-justify">
+                        Las aplicaciones JavaScript se componen de sentencias con una sintaxis propia.
+                        <br>Una sentencia puede estar formada por múltiples líneas.
+                        <br>Puede haber varias sentencias en una sola línea al ser separadas cada una de las sentencias por un punto y coma.
+                        <br>No es una palabra clave, sino un grupo de palabras clave.
+                        <ol class="text-justify">
+                            <li>
+                                <b><u>Block</u></b>. Un bloque de sentencias se utiliza para agrupar cero o mas sentencias. El bloque se delimita por un par de llaves.
+                                <br><i>{ sentencia_1; sentencia_2; ... sentencia_n; }</i>
+                            </li>
+                            <li>
+                                <b><u>break</u></b>. Termina el bucle actual, sentecia switch o label y transfiere el control del programa a la siguiente sentencia a la sentecia de terminación de éstos elementos.
+                                <br><i>break [ etiqueta ];</i>
+                            </li>
+                            <li>
+                                <b><u>continue</u></b>. Finaliza la ejecucion de las sentencias dentro de la iteracion actual del actual bucle y continua la ejecucion del bucle con la siguiente iteracion.
+                                <br><i>continue [ etiqueta ];</i>
+                            </li>
+                            <li>
+                                <b><u>Empty</u></b>. Un empty statement o sentencia vacía es usada para no proveer una sentencia, incluso si la sintaxis JavaScript esperase una.
+                                <br><i>;</i>
+                            </li>
+                            <li>
+                                <b><u>if...else</u></b>. Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada.
+                                <br><i>if { (condición) sentencia1 } else { sentencia2 }</i>
+                            </li>
+                            <li>
+                                <b><u>switch</u></b>. La declaración switch evalúa una expresión, comparando el valor de esa expresión con una instancia case, y ejecuta declaraciones asociadas a ese case, así como las declaraciones en los case que siguen.
+                                <br><i>switch (expresión) {
+                                <br>case valor1:
+                                <br>//Declaración ejecutada cuando el resultado de expresión coincide valor1
+                                <br>[break;]
+                                <br>case valor2:
+                                <br>//Declaración ejecutada cuando el resultado de expresión coincide valor2
+                                <br>[break;]
+                                <br>...
+                                <br>case n:
+                                <br>//Declaración ejecutadas cuando el resultado de expresión coincide valor n
+                                <br>[break;]
+                                <br>default:
+                                <br>//Declaración ejecutada cuando ninguno de los valores coincide con la expresión
+                                <br>[break;]
+                                <br>}</i>
+                            </li>
+                            <li>
+                                <b><u>throw</u></b>. Lanza una excepción definida por el usuario.
+                                <br><i>throw expresión;</i>
+                            </li>
+                            <li>
+                                <b><u>try...catch</u></b>. La declaración try...catch señala un bloque de instrucciones a intentar (try), y especifica una respuesta si se produce una excepción (catch).
+                                <br><i>try
+                                <br>    {
+                                <br>        nonExistentFunction();
+                                <br>    } catch (error) {
+                                <br>        console.error(error);
+                                <br>    // expected output: ReferenceError: nonExistentFunction is not defined
+                                <br>    // Note - error messages will vary depending on browser
+                                <br>  }</i>
+                            </li>
+                        </ol>
+                    </p>
+                    <a href="#declaracionBucles" class="tm-btn">Bucles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Declaración Bucles JS -->
+        <section class="parallax-window tm-section tm-section-services" id="declaracionBucles" data-parallax="scroll" data-image-src="img/bg-09.jpg">
+            <div class="tm-page-content-width">
+                <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
+                    <div class="tm-content-box-inner">
+                        <h2 class="tm-section-title tm-green-text text-justify">Declaración de Bucles y Características</h2>
+                        <p class="text-justify">
+                            Los bucles ofrecen una forma rápida y sencilla de hacer algo repetidamente.
+                            <br>Hay muchos diferentes tipos de bucles, pero esencialmente, todos hacen lo mismo: repiten una acción varias veces.
+                            <br>Los diversos mecanismos de bucle ofrecen diferentes formas de determinar los puntos de inicio y terminación del bucle.
+                            <br>Hay varias situaciones que son fácilmente atendidas por un tipo de bucle que por otros.
+                            <br>Las declaraciones para bucles proporcionadas en JavaScript son:
+                        </p>
+                        <ol class="text-justify">
+                            <li>
+                                <b><u>for</u></b>. Un ciclo for se repite hasta que una condición especificada se evalúe como <b>false</b>.
+                                <br><i>for (let i = 0; i < selectObject.options; i++)
+                                <br>instrucción</i>
+                            </li>
+                            <li>
+                                <b><u>do...while</u></b>. La instrucción do...while se repite hasta que una condición especificada se evalúe como falsa.
+                                <br>Una declaración do...while tiene el siguiente aspecto:
+                                <br><i>do
+                                <br>expresión
+                                <br>while (condición);</i>
+                            </li>
+                            <li>
+                                <b><u>while</u></b>. Una declaración while ejecuta sus instrucciones siempre que una condición especificada se evalúe como true.
+                                <br>Una instrucción while tiene el siguiente aspecto:
+                                <br><i>while (condición)
+                                <br>expresión</i>
+                            </li>
+                            <li>
+                                <b><u>labeled</u></b>. Una label proporciona una instrucción con un identificador que permite hacer referencia a ella en otra parte del programa.
+                                <br>La sintaxis de la instrucción etiquetada es similar a la siguiente:
+                                <br><i>label : instrucción</i>
+                                <br>El valor de label puede ser cualquier identificador de JS que no sea una palabra reservada.
+                                <br>La declaración que identifica a una etiqueta puede ser cualquier enunciado.
+                            </li>
+                            <li>
+                                <b><u>continue</u></b>. La instrucción continue se puede usar para reiniciar un while, do-while, for, o declaración label.
+                                <ul>
+                                    <li>
+                                        Cuando se usa continue sin una etiqueta, finaliza la iteración actual del while, do-while o for y continúa la ejecución del bucle con la siguiente iteración.
+                                        A diferencia de la instrucción break, continue no termina la ejecución del bucle por completo. En un bucle while, vuelve a la condición. En un bucle for, salta a la expresión-incremento.
+                                    </li>
+                                    <li>
+                                        Cuando usas continue con una etiqueta, se aplica a la declaración de bucle identificada con esa etiqueta.
+                                    </li>
+                                </ul>
+                                La sintaxis de la instrucción continue se parece a la siguiente:
+                                <br><i>continue [label];</i>
+                            </li>
+                            <li>
+                                <b><u>for...in</u></b>. La instrucción for...in itera una variable especificada sobre todas las propiedades enumerables de un objeto. Para cada propiedad distinta, JS ejecuta las instrucciones especificadas.
+                                <br>Una declaración for...in tiene el siguiente aspecto:
+                                <br><i>for (variable in objeto)
+                                <br>instrucción</i>
+                            </li>
+                            <li>
+                                <b><u>for...of</u></b>. La declaración for...of crea un bucle que se repite sobre objetos iterables (incluidos Array, Map, Set, objetos arguments, etc), invocando un gancho de iteración personalizado con declaraciones que se ejecutarán para el valor de cada distinta propiedad.
+                                <br><i>para (variable de objeto)
+                                <br>expresión</i>
+                            </li>
+                            <li>
+                                <b><u>break</u></b>. Esta instrucción se usa para termina un bucle, switch o junto con una declaración etiquetada.
+                                <br>Cuando se usa sin una etiqueta, inmediatamente termina el while, do-while, for o switch y transfiere el control a la siguiente declaración.
+                                <br>Cuando se usa break con una etiqueta, termina la declaración etiquetada especificada.
+                                <br>La sintaxis de la instrucción break se ve así:
+                                <br><i>break;
+                                <br>break [label];</i>
+                            </li>
+                        </ol>
+                        <a href="#declaracionFunciones" class="tm-btn">Funciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Declaración Funciones en JS -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="declaracionFunciones" data-parallax="scroll" data-image-src="img/bg-10.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">Declaración de Funciones y Características</h2>
+                    <p class="text-justify">
+                        Las funciones son uno de los bloques de construcción fundamentales en JavaScript.
+                        Una función en JS es un conjunto de instrucciones que realiza una tarea o calcula un valor, pero debe tomar alguna entrada y devolver una salida donde hay alguna relación obvia entre la entrada y la salida.
+                        Para usar una función, se definir en algún lugar del ámbito desde el que se llame.
+                        Una definición, declaración o expresión de función consta de la palabra clave <b>function</b>, seguida de:
+                        <ul>
+                            <li class="text-justify">
+                                El nombre de la función.
+                            </li>
+                            <li class="text-justify">
+                                Una lista de parámetros de la función, entre paréntesis y separados por comas.
+                            </li>
+                            <li class="text-justify">
+                                Las declaraciones de JavaScript que definen la función, encerradas entre llaves, { ... }.
+                            </li>
+                        </ul>
+                        <br>Por ejemplo, el siguiente código define una función simple llamada square ("cuadrado"):<br>
+                        <br>function square(number) {
+                        <br>return number * number;
+                        <br>  }
+                        <br><br>Si bien la declaración de función anterior sintácticamente es una declaración, las funciones también se pueden crear mediante una expresión function.
+                        <br>Esta función puede ser anónima; no tiene por qué tener un nombre. Por ejemplo, la función square se podría haber definido como:
+                        <br><br>const square = function(number) { return number * number }
+                        <br>var x = square(4) // x obtiene el valor 16
+                        </p>
+                        <a href="#objetos" class="tm-btn">Objetos</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+                
+        <!-- Declaración Objetos en JS -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="objetos" data-parallax="scroll" data-image-src="img/bg-11.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">Declaración de Objetos y Características</h2>
+                    <p class="text-justify">
+                        JS está orientado a objetos, que es una colección de propiedades, y una propiedad es una asociación entre un nombre o clave y un valor.
+                        El valor de una propiedad puede ser una función, en cuyo caso la propiedad es conocida como un método.
+                        Además de los objetos que están predefinidos en el navegador, se pueden definir objetos propios.
+                    </p>
+                    <h3 class="tm-section-title">Visión general sobre Objetos</h3>
+                    <p>
+                        Los objetos en JS se pueden comparar con objetos de la vida real.
+                        El concepto de Objetos en JS se puede entender con objetos tangibles de la vida real.
+                        En JS un objeto es un entidad independiente con propiedades y tipos.
+                        Comparándolo con una taza, por ejemplo, se tiene que una taza es un objeto con propiedades, tales como: color, diseño, peso, material del que está hecha, etc. Del mismo modo, los objetos de JS pueden tener propiedades que definan sus características.
+                    </p>
+                    <h3 class="tm-section-title">Objetos y propiedades</h3>
+                    <p>
+                        Un objeto de JS tiene propiedades asociadas a él.
+                        Una propiedad de un objeto se puede explicar como una variable adjunta al objeto.
+                        Las propiedades de un objeto básicamente son lo mismo que las variables comunes de JS, excepto por el nexo con el objeto.
+                        Las propiedades de un objeto definen las características del objeto.
+                        Accedes a las propiedades de un objeto con una simple notación de puntos:
+                        <br><i>nombreObjeto.nombrePropieadad</i>
+                        <br><br>Como todas las variables de JS, tanto el nombre del objeto como el nombre de la propiedad son sensibles a mayúsculas y minúsculas.
+                        Se pueden definir propiedades asignándoles un valor.
+                        <br>Por ejemplo, creamos un objeto llamado <b>myCar</b> y asignamos propiedades denominadas <b>make</b>, <b>model</b>, y <b>year</b> de la siguiente manera:
+                        <br><i>var myCar = new Object();
+                        <br>    myCar.make = 'Ford';
+                        <br>    myCar.model = 'Mustang';
+                        <br>    myCar.year = 1969;</i>
+                        <br><br>El ejemplo anterior también se podría escribir usando un iniciador de objeto, que es una lista delimitada por comas de cero o más pares de nombres de propiedad y valores asociados de un objeto, encerrados entre llaves ({}):
+                        <br><i>var myCar = {
+                        <br>    make: 'Ford',
+                        <br>    model: 'Mustang',
+                        <br>    year: 1969
+                        <br>};</i>
+                        <a href="#eventos" class="tm-btn">Eventos</a>
                     </p>
                 </div>
             </div>
