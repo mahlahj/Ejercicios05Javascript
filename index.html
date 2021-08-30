@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Page One - Responsive HTML CSS Template</title>
+    <!--
+    Page One Template
+    https://templatemo.com/tm-504-page-one
+    -->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>   
+    <div class="container-fluid" id="main">
+        <!-- 
+            https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+         -->
+        <button onclick="topFunction()" id="botonArriba" title="Arriba"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+        <script>
+            mybutton = document.getElementById("botonArriba");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction()
+            {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+        
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction()
+            {
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+        <!-- Descripción JS -->
+        <section class="parallax-window tm-section tm-section-home" id="home" data-parallax="scroll" data-image-src="img/bg-01.jpg">
+            <div class="tm-page-content-width tm-padding-b">
+                <div class="text-center tm-site-title-wrap">
+                    <h1 class="tm-site-title">JAVASCRIPT</h1>    
+                </div>                    
+                <div class="tm-textbox tm-white-bg">
+                    <h2 class="tm-red-text tm-section-title">¿Qué es JavaScript?</h2>
+                    <p class="text-justify">
+                        JavaScript es un lenguaje de programación o de secuencias de comandos que permite implementar funciones complejas en páginas web, además de mostrar información estática para visualizar, muestra actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc.
+                        <br>Es la tercera capa de las tecnologías web estándar, siendo las dos primeras HTML y CSS.
+                    </p>
+                    <ul class="text-justify">
+                        <li>
+                            <u><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></u> es el lenguaje de marcado usado para estructurar y dar significado al contenido web.
+                        </li>
+                        <li>
+                            <u><a href="https://developer.mozilla.org/es/docs/Web/css">CSS</a></u> es un lenguaje de reglas de estilo usado para aplicar estilo al contenido HTML.
+                        </li>
+                        <li>
+                            <u><a href="https://developer.mozilla.org/es/docs/Web/javascript">JavaScript</a></u> es un lenguaje de secuencias de comandos que permite crear contenido de actualización dinámica, controlar multimedia, animar imágenes, entre otras cosas.
+                        </li>
+                    </ul>
+                    <a href="#quehace" class="tm-btn">¡EMPECEMOS!</a>
+                </div>    
+            </div>
+        </section>
+        
+        <!-- Qué hace JS -->
+        <section class="parallax-window tm-section tm-section-services" id="quehace" data-parallax="scroll" data-image-src="img/bg-02.jpg">
+            <div class="tm-page-content-width">
+                <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
+                    <div class="tm-content-box-inner">
+                        <h2 class="tm-section-title tm-blue-text">¿Qué hace JavaScript?</h2>
+                        <p class="text-justify">
+                            El núcleo del lenguaje JavaScript de lado del cliente consta de algunas características de programación comunes que te permiten hacer cosas como:
+                        </p>
+                        <div class="media tm-media">
+                            <i class="fa fa-4x fa-podcast tm-media-icon"></i>    
+                            <div class="media-body tm-media-body">
+                                <p class="tm-small-font text-justify">
+                                    Almacenar valores útiles dentro de variables.<br>
+                                    Por ejemplo: ingresa un nuevo nombre y se almacenará en una variable con el nombre que designes: <u><name>name</name></u>
+                                </p>
+                                <script>
+                                    const para = document.querySelector('name');
+                                
+                                    para.addEventListener('click', updateName);
+                                
+                                    function updateName() {
+                                        let name = prompt('Ingresa un nuevo nombre');
+                                        para.textContent = '' + name;
+                                    }
+                                    </script>
+                            </div>                            
+                        </div>
+                        <div class="media tm-media">
+                            <i class="fa fa-3x fa-calendar tm-media-icon"></i>    
+                            <div class="media-body tm-media-body">                                    
+                                <p class="tm-small-font text-justify">
+                                    Operaciones sobre fragmentos de texto (strings).<br>
+                                    En el ejemplo anterior, tomamos la cadena ' ' (vacía) y la unimos a la variable "name" para crear la etiqueta de texto completa.
+                                </p>   
+                            </div>
+                        </div>
+                        <div class="media tm-media">
+                            <i class="fa fa-3x fa-bell-o tm-media-icon"></i>    
+                            <div class="media-body tm-media-body">                                    
+                                <p class="tm-small-font text-justify">
+                                    Y ejecuta código en respuesta a ciertos eventos que ocurren en una página web.<br>
+                                    Usamos un evento click en nuestro ejemplo anterior para detectar cuándo se hace clic en el botón y luego ejecutar el código que actualiza la etiqueta de texto.
+                                </p>   
+                            </div>
+                        </div>
+                        <p class="text-justify">
+                            ¡Y mucho más!<br>
+                            Sin embargo, lo principal es la funcionalidad construida sobre el lenguaje JavaScript desde el "lado del cliente".
+                        </p>
+                        <a href="#DOM" class="tm-btn">Más Información.</a>
+                    </div>                        
+                </div>                    
+            </div>                
+        </section>
+        
+        <!-- Que es DOM -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="DOM" data-parallax="scroll" data-image-src="img/bg-03.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">¿Qué es el DOM?</h2>
+                    <p class="text-justify">
+                        El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML y XML.
+                        <br>Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo y contenido.
+                        <br>El DOM da una representación del documento como un grupo de nodos y objetos estructurados que tienen propiedades y métodos. Esencialmente, conecta las páginas web a scripts o lenguajes de programación.
+                        <br>Una página web es un documento. Éste documento puede exhibirse en la ventana de un navegador o también como código fuente HTML. Pero, en los dos casos, es el mismo documento.
+                        <br>El modelo de objeto de documento (DOM) proporciona otras formas de presentar, guardar y manipular este mismo documento.
+                        <br>El DOM es una representación completamente orientada al objeto de la página web y puede ser modificado con JavaScript.
+                        <br>Abajo encontrarás dos ejemplos de esto...
+                    </p>
+                    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+                    style="background-color:#983333; width: 300px; height: 40px; padding: 35px; color: white; position: absolute;">
+                        Pasa el cursor...
+                    </div>
+                    <script>
+                        function mOver(obj)
+                        {
+                            obj.innerHTML = "¡Gracias!"
+                        }
+
+                        function mOut(obj)
+                        {
+                            obj.innerHTML = "Pasa el cursor..."
+                        }
+                    </script>
+                    <div>
+                        <p>
+                            .
+                        </p>
+
+                        <button id="miBoton">Presióname</button>
+                    
+                        <p id="prueba"></p>
+                    
+                        <script>
+                            document.getElementById("miBoton").onclick = displayDate;
+                            function displayDate()
+                            {
+                                document.getElementById("prueba").innerHTML = Date();
+                            }
+                        </script>
+                    </div>
+                    <a href="#APIs" class="tm-btn">Proseguir.</a>
+                </div>
+            </div>            
+        </section>
+
+        <!-- API's Web -->
+        <section class="parallax-window tm-section tm-section-home" id="APIs" data-parallax="scroll" data-image-src="img/bg-05.jpg">
+            <div class="tm-page-content-width tm-padding-b">
+                <div class="tm-textbox tm-white-bg">
+                    <h2 class="tm-red-text tm-section-title">¿Qué es un API Web?</h2>
+                    <p class="text-justify">
+                        Las Interfaces de Programacion de Aplicaciones (API's por sus siglas en inglés) son construcciones disponibles en los lenguajes de programación que permiten a los desarrolladores crear funcionalidades complejas de una manera simple.
+                        <br>Estas abstraen el código más complejo para proveer una sintaxis más fácil de usar en su lugar.
+                        <br>JavaScript del lado cliente, particularmente, tiene muchas APIs disponibles; no son parte del lenguaje en sí, sino que están construidas sobre el núcleo para proporcionar "superpoderes adicionales".
+                        <br>Por lo general, se dividen en dos categorías:
+                        <ol class="text-justify">
+                            <li>
+                                Las APIs de navegador están integradas en el navegador web propiamente y pueden exponer datos del navegador o del entorno informático para hacer cosas complejas y útiles con él.
+                                <br>Por ejemplo, la API de Geolocalización otorga algunas construcciones simples de JS para obtener datos de ubicación con los que trazar la ubicación en un mapa de Google.
+                                <br>Realmente, el navegador está haciendo uso de códigos de bajo nivel complejos en segundo plano para comunicarse con el hardware GPS del dispositivo, recuperar datos de posición y devolverlos al entorno del navegador para su uso.
+                                <br>La API se encarga de abstraer dicha complejidad.
+                            </li>
+                            <li>
+                                Las APIs de terceros no están incluídas por defecto en el navegador, y, por lo general es necesario obtener el código e información desde algún lugar de la Web.
+                                <br>Por ejemplo, la API de Twitter permite hacer cosas como mostrar los últimos tweets en un sitio web, así como proporcionar un conjunto especial de construcciones para consultar el servicio de Twitter y devolver información específica.
+                            </li>
+                        </ol>
+                    </p>
+                    <ul class="text-justify">
+                        <li>
+                            <b>APIs para manipular documentos cargados en el navegador</b>. El ejemplo más obvio es la <a href="https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model">API DOM (Document Object Model)</a>, que permite manipular HTML y CSS — crear, eliminar y modificar HTML, aplicar estilos dinámicos a una página, etc.
+                            <br>Cada vez que se muestra una ventana emergente en una página, o un nuevo contenido, por ejemplo, es el DOM en acción. Más información sobre este tipo de APIs en <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">Manipulando documentos (en-US)</a>.
+                        </li>
+                        <li>
+                            <b>APIs que obtienen datos del servidor</b>, comunmente usadas para actualizar pequeñas secciones de una página web.
+                            <br>Aparente pequeño detalle que tiene un gran impacto en el desempeño y el comportamiento de los sitios.
+                            <br>Las APIs hacen esto posible gracias a que incluyen <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a> y <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">la Fetch API</a>. Tambièn puede encontrar el termino Ajax que describe esta técnica. Más información sobre este tipo de APIs en <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data">Fetching data from the server</a>.
+                        </li>
+                        <li>
+                            <b>Las APIs para dibujar y manipular graficos</b> ya son soportadas por la mayoría de navegadores. Las más populares son <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Canvas</a> y <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">WebGL</a>, que permiten actualizar la información de cada uno de los píxeles contenidos en un <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas">"canvas"</a> HTML, para crear escenas 2D y 3D.
+                            <br>Por ejemplo, se pueden dibujar formas como rectángulos o círculos, importar una imagen en el canvas y aplicarle filtros como sepia o escala de grises usando la API de Canvas, o crear una escena compleja 3D con iluminación y texturas usando WebGL. Estas APIs, a menudo se combinan con apis para crear bucles de animación <a href="https://developer.mozilla.org/es/docs/Web/API/Window/requestAnimationFrame">(como window.requestAnimationFrame())</a> y otras veces para hacer que se actualicen constantemente escenas de dibujos animados o videojuegos.
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery"><b>APIS de audio y vídeo</b></a> como <a href="https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement">HTMLMediaElement</a>, la <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Audio API</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API">WebRTC</a> que permiten hacer cosas realmente interesantes con elementos multimedia: crear una interfaz personalizada para los controles de reproducción de audio y vídeo, mostrar pistas de texto con subtítulos junto con el vídeo, capturar vídeo de la cámara web para ser manipulado en un canvas o mostrado en el ordenador de otra persona en una videoconferencia, añadir efectos a las pistas de audio (como ganancia, distorsión, retardo, etc).
+                        </li>
+                        <li>
+                            <b>APIs de dispositivos</b> son básicamente APIs para manipular y recuperar información de dispositivos de forma que sean útiles para aplicaciones web. Otros ejemplos incluyen indicar al usuario de que una actulización útil está disponible en una aplicación web mediante notificaciones de sistema (ver <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API">Notifications API)</a> o la vibración de hardware (ver <a href="https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API">Vibration API)</a>.
+                        </li>
+                    </ul>
+                    <a href="#quehaceenweb" class="tm-btn">Siguiente.</a>
+                </div>    
+            </div>
+        </section>
+
+        <!-- JS en Web -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="quehaceenweb" data-parallax="scroll" data-image-src="img/bg-06.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">¿Qué puede hacer JavaScript en una página web?</h2>
+                    <p class="text-justify">
+                        Se puede hacer casi cualquier cosa con JavaScript: empezar con pequeñas cosas como carruseles, galerías de imágenes, diseños fluctuantes, y respuestas a las pulsaciones de botones.
+                        <br>Con más experiencia, se pueden crear juegos, animaciones 2D y gráficos 3D, aplicaciones integradas basadas en bases de datos, y mucho más.
+                        <br>JavaScript por sí solo es muy compacto y flexible, además, los desarrolladores han escrito gran cantidad de herramientas encima del núcleo del lenguaje JavaScript, desbloqueando una gran cantidad de funcionalidades adicionales con un mínimo esfuerzo.
+                        <br>Esto incluye:
+                        <ul>
+                            <li class="text-justify">
+                                Interfaces de Programación de Aplicaciones del Navegador (APIs) — APIs construidas dentro de los navegadores que ofrecen funcionalidades como crear dinámicamente contenido HTML y establecer estilos CSS, hasta capturar y manipular un vídeo desde la cámara web del usuario, o generar gráficos 3D y muestras de sonido.
+                            </li>
+                            <li class="text-justify">
+                                APIs de terceros, que permiten a los desarrolladores incorporar funcionalidades en sus sitios de otros proveedores de contenidos como Twitter o Facebook.
+                            </li>
+                            <li class="text-justify">
+                                Marcos de trabajo y librerías de terceros que puedes aplicar a tu HTML para que puedas construir y publicar rápidamente sitios y aplicaciones.
+                            </li>
+                        </ul>
+                        <br><u><b>En la presente página hay varios ejemplos de JavaScript aplicado.</b></u>
+                        <ol><br>
+                            <li class="text-justify">
+                                El botón lateral que redirige al tope y se encuentra en la esquina inferior derecha.
+                                <br>Se muestra como el siguiente icono: "<i class="fa fa-chevron-up" aria-hidden="true"></i>"
+                            </li>
+                            <li class="text-justify">
+                                El botón de cambio de nombre en la sección: "¿Qué hace JavaScript?".
+                            </li>
+                            <li class="text-justify">
+                                El "scrolling" con imágenes que cambian entre cada sección de la página.
+                            </li>
+                        </ol>
+                        <p class="text-justify">
+                            En cuanto a cómo agregar código de JS este se puede añadir directamente a un archivo HTML utilizando la etiqueta <b>script</b> y <b>/script</b> entre los signos <b><></b> envolviendo el código JS escrito y se encuentre entre las etiquetas <b>head</b> y <b>body</b>.
+                            <br>También se puede crear un archivo .js en el árbol/carpeta de trabajo donde se coloque todos los scripts a ejecutar.
+                        </p>
+                        <h2 class="tm-section-title">Comentarios</h2>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="parallax-window tm-section tm-section-contact" id="contact" data-parallax="scroll" data-image-src="img/bg-04.jpg">
+            <div class="tm-page-content-width">
+                <div class="tm-translucent-white-bg tm-textbox tm-content-box tm-textbox-full-height">
+                    <h2 class="tm-section-title tm-red-text">Contact Us</h2>
+                    <p>Suspendisse commodo, quam eget viverra ultrices, est erat condimentum est, in elementum diam erat ut lacus. Donec ornare massa quis metus bibendum aliquet.</p>
+                    
+                    <!-- contact form -->
+                    <form action="index.html" method="post" class="tm-contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                        </div>
+                        <div class="form-group">                                                        
+                            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact_message" name="contact_message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="tm-btn">Submit</button>
+                    </form>  
+                </div>
+            </div>
+            <div class="tm-copyright-div">
+                <p class="tm-copyright-text">Copyright &copy; <span class="tm-current-year">2020</span> Your Company 
+                
+                - Design: TemplateMo</p>
+            </div>                
+        </section>
+    </div>
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>         <!-- https://jquery.com/download/ -->
+        <script src="js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
+        <script src="js/imagesloaded.pkgd.min.js"></script>     <!-- https://imagesloaded.desandro.com/ --> 
+        <script src="js/jquery.magnific-popup.min.js"></script> <!-- http://dimsemenov.com/plugins/magnific-popup/ -->
+        <script src="js/parallax.min.js"></script>
+        <script>     
+            $(document).ready(function () {
+                // Isotope for Gallery
+                if ( $('.iso-box-wrapper').length > 0 ) { 
+
+                    var $container  = $('.iso-box-wrapper'), 
+                    $imgs     = $('.iso-box img');
+
+                    $container.imagesLoaded(function () {
+                        $container.isotope({
+                            layoutMode: 'fitRows',
+                            itemSelector: '.iso-box'
+                        });
+                        $imgs.load(function(){
+                            $container.isotope('reLayout');
+                        })
+                    });
+
+                    //filter items on button click
+                    $('.filter-wrapper li a').click(function(){
+                        var $this = $(this), filterValue = $this.attr('data-filter');
+                        $container.isotope({ 
+                            filter: filterValue,
+                            animationOptions: { 
+                                duration: 750, 
+                                easing: 'linear', 
+                                queue: false, 
+                            }                
+                        });             
+
+                        // don't proceed if already selected
+                        if ( $this.hasClass('selected') ) { 
+                            return false; 
+                        }
+
+                        var filter_wrapper = $this.closest('.filter-wrapper');
+                        filter_wrapper.find('.selected').removeClass('selected');
+                        $this.addClass('selected');
+
+                        return false;
+                    });
+                }
+
+                // Magnific Popup for Gallery
+                $('.iso-box-wrapper').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery:{enabled:true}
+                });
+
+                // Smooth scrolling (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+                // Select all links with hashes
+                $('a[href*="#"]')
+                  // Remove links that don't actually link to anything
+                  .not('[href="#"]')
+                  .not('[href="#0"]')
+                  .click(function(event) {
+                    // On-page links
+                    if (
+                      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                      && 
+                      location.hostname == this.hostname
+                    ) {
+                      // Figure out element to scroll to
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                      // Does a scroll target exist?
+                      if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                          scrollTop: target.offset().top
+                        }, 600, function() {
+                          // Callback after animation
+                          // Must change focus!
+                          var $target = $(target);
+                          $target.focus();
+                          if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                          } else {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                          };
+                        });
+                      }
+                    }
+                  });
+
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());          
+            });
+    </script>   
+</body>
+</html>
