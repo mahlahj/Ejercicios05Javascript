@@ -563,7 +563,7 @@
         </section>
 
         <!-- Eventos en JS -->
-        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="eventos" data-parallax="scroll" data-image-src="img/bg-test4.jpg">
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="eventos" data-parallax="scroll" data-image-src="img/bg-12.jpg">
             <div class="tm-page-content-width tm-flex-col tm-gallery-content">
                 <div class="tm-content-box-inner">
                     <h2 class="tm-section-title">Lectura de Eventos</h2>
@@ -614,32 +614,425 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="parallax-window tm-section tm-section-contact" id="contact" data-parallax="scroll" data-image-src="img/bg-04.jpg">
+        <!-- JS Lado Cliente -->
+        <section class="parallax-window tm-section tm-section-services" id="cliente" data-parallax="scroll" data-image-src="img/bg-13.jpg">
             <div class="tm-page-content-width">
-                <div class="tm-translucent-white-bg tm-textbox tm-content-box tm-textbox-full-height">
-                    <h2 class="tm-section-title tm-red-text">Contact Us</h2>
-                    <p>Suspendisse commodo, quam eget viverra ultrices, est erat condimentum est, in elementum diam erat ut lacus. Donec ornare massa quis metus bibendum aliquet.</p>
-                    
-                    <!-- contact form -->
-                    <form action="index.html" method="post" class="tm-contact-form">
-                        <div class="form-group">
-                            <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
+                    <div class="tm-content-box-inner">
+                        <h2 class="tm-section-title tm-red-text">JS del lado cliente</h2>
+                        <p class="text-justify">
+                            Los navegadores web actuales admiten varias formas para que los sitios web almacenen datos en la computadora del usuario, con el permiso del usuario, y luego los recuperen cuando sea necesario.
+                            Esto permite conservar los datos para el almacenamiento a largo plazo, guardar sitios o documentos para su uso sin conexión, conservar la configuración específica del usuario para sitios web y más.
+                            <br>Por ejemplo:
+                        </p>
+                        <div class="media tm-media">
+                            <i class="fa fa-4x fa-file-text-o tm-media-icon"></i>    
+                            <div class="media-body tm-media-body">
+                                <p class="tm-small-font text-justify">
+                                    <button class="myBtn" id="myBtn">Presióname</button>
+                                </p>
+                                <script>
+                                    const button = document.querySelector('#myBtn');
+
+                                    button.onclick = function() {
+                                        let nombre = prompt('¿Cuál es tu nombre?');
+                                        alert('¡Hola ' + nombre + ', encantado de verte!');
+                                    }
+                                </script>
+                            </div>                            
                         </div>
-                        <div class="form-group">                                                        
-                            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="contact_message" name="contact_message" class="form-control" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <button type="submit" class="tm-btn">Submit</button>
-                    </form>  
+                        <p class="text-justify">
+                            Si no tuviéramos variables disponibles, tendríamos que implementar un bloque de código inmenso que verificara el nombre ingresado,luego mostrara el mensaje apropiado para cualquier nombre, haciendo realmente ineficiente el código por ser mucho más grande y simplemente no funcionaría porque no se almacenarían todas las opciones posibles.
+                        </p>
+                        <a href="#servidor" class="tm-btn">Lado Servidor</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+         <!-- JS Lado Servidor -->
+         <section class="parallax-window tm-section tm-section-home" id="servidor" data-parallax="scroll" data-image-src="img/bg-14.jpg">
+            <div class="tm-page-content-width tm-padding-b">
+                <div class="tm-textbox tm-white-bg">
+                    <h2 class="tm-red-text tm-section-title">Lado Servidor</h2>
+                    <p class="text-justify">
+                        El código del lado servidor puede escribirse en cualquier número de lenguajes de programación como: PHP, Python, Ruby, C#, <b>NodeJS</b>, etc.
+                        El código del lado servidor tiene acceso completo al sistema operativo del servidor y el desarrollador puede elegir qué lenguaje de programación y qué versión específica usar. 
+                        <br>Los desarrolladores generalmente escriben su código usando web frameworks, que son colecciones de funciones, objetos, reglas y otras construcciones de código diseñadas para resolver problemas comunes, acelerar el desarrollo y simplificar los diferentes tipos de tareas que se han de abordar en un dominio en particular.
+                        <br>Mientras que, tanto el código lado cliente y el lado servidor usan frameworks, los dominios son muy diferentes, y también lo son los frameworks.
+                        <br>Los frameworks del lado cliente simplifican los diseños y las tareas de presentación mientras que los del lado servidor proporcionan un montón de funcionalidades "comunes" que tendría que haber implementado el propio desarrollador, por ejemplo: soporte para las sesiones, soporte para los usuarios y autenticación, acceso fácil a la base de datos, librerías de plantillas, etc...).
+                        <br>La programación de lado-servidor nos permite almacenar la información en una base de datos y construir dinámicamente y devolver archivos HTML, PDF's, imágenes, etc. También es posible devolver simplemente datos JSON, XML, etc., para presentar mediante los web frameworks adecuados del lado-cliente para reducir la carga de procesamiento del servidor y la cantidad de datos que se necesitan enviar.
+                        <br>El servidor no se limita a enviar información de las bases de datos, pues devuelve el resultado de herramientas de software o datos de servicios de comunicación. El contenido puede incluso ser dirigido por el tipo de dispositivo cliente que lo está recibiendo.
+                        <br>Debido a que la información está en una base de datos, puede también ser compartida y actualizada con otros sistemas de negocio. Por ejemplo, cuando se venden los productos en una tienda online, la tienda actualiza su base de datos de inventario.
+                    </p>
+                    <a href="#JSbad" class="tm-btn">¡ERROR!</a>
+                </div>    
+            </div>
+        </section>
+
+        <!-- JS Errores -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="JSbad" data-parallax="scroll" data-image-src="img/bg-15.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">Tipos de errores en JS y como verlos en el navegador</h2>
+                    <p class="text-justify">
+                        Los objetos Error se lanzan cuando ocurren errores en tiempo de ejecución. También se puede usar el objeto Error como objeto base para excepciones definidas por el usuario.
+                    </p>
+                    <p class="text-justify">
+                        Tipos de errores estándar integrados:
+                        <ul>
+                            <li class="text-justify">
+                                <b><u>EvalError</u></b>. Crea una instancia que representa un error que ocurre con respecto a la función global eval().
+                            </li>
+                            <li class="text-justify">
+                                <b><u>InternalError</u></b>.Crea una instancia que representa un error que ocurre cuando se produce un error interno en el motor de JavaScript. Por ejemplo: "demasiada recursividad".
+                            </li>
+                            <li class="text-justify">
+                                <b><u>RangeError</u></b>. Crea una instancia que representa un error que ocurre cuando una variable numérica o parámetro está fuera de su rango válido.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>ReferenceError</u></b>. Crea una instancia que representa un error que ocurre cuando se quita la referencia a una referencia no válida.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>SyntaxError</u></b>. Crea una instancia que representa un error de sintaxis.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>TypeError</u></b>. Crea una instancia que representa un error que ocurre cuando una variable o parámetro no es de un tipo válido.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>URIError</u></b>. Crea una instancia que representa un error que ocurre cuando encodeURI() o decodeURI() pasan parámetros no válidos.
+                            </li>
+                        </ul>
+                    </p>
+                    <p class="text-justify">
+                        Cuando se desarrollan aplicaciones en JS es necesario saber como ver los mensajes de error cuando la aplicación se ejecuta en un navegador, a diferencia de otros lenguajes como PHP que presenta los errores en pantalla, JS posee una manera diferente para verlos que es distinta en cada navegador.
+                        A continuación se muestran las formas para ver los errores en los 5 principales navegadores:
+                        <ul>
+                            <li class="text-justify">
+                                <b>Mozilla Firefox</b>, presionar las teclas Ctrl + Shift + J en Windows o Command + Shift + J en MacOS.
+                            </li>
+                            <li class="text-justify">
+                                <b>Google Chrome</b>, presionar las teclas Ctrl + Shift + J en Windows Command + Shift + J en una MacOS.
+                            </li>
+                            <li class="text-justify">
+                                <b>Apple Safari</b>, seleccionar el menú Safari -> Preferencias -> Avanzado -> "Mostrar menú de desarrollo en barra de menú".
+                            </li>
+                            <li class="text-justify">
+                                <b>Opera</b>, en el menú principal seleccionar Herramientas -> Avanzado -> Consola de Errores.
+                            </li>
+                            <li class="text-justify">
+                                <b>Microsoft Internet Explorer</b>, en el menú principal seleccionar Herramientas -> Opciones de Internet -> Avanzado luego quitar el check en la opción: "Disable script debugging" y seleccionar: "Diplay a Notification About Every Script Error".
+                            </li>
+                        </ul>
+                        <a href="#cadenasAobjetos" class="tm-btn">Strings a Objetos</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- JS Cadenas a objetos -->
+        <section class="parallax-window tm-section tm-section-home" id="cadenasAobjetos" data-parallax="scroll" data-image-src="img/bg-16.jpg">
+            <div class="tm-page-content-width tm-padding-b">
+                <div class="tm-textbox tm-white-bg">
+                    <h2 class="tm-red-text tm-section-title">Cadenas a Objetos</h2>
+                    <p class="text-justify">
+                        Las cadenas son útiles para almacenar datos que se pueden representar en forma de texto. Algunas de las operaciones más utilizadas en cadenas son verificar su length, construirlas y concatenarlas usando operadores de cadena + y +=, verificar la existencia o ubicación de subcadenas con indexOf() o extraer subcadenas con el método substring().
+                        <br>El método <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse()</a> recibe una cadena de texto como JSON de un servidor web, transformando el valor de la cadena producido por el análisis a un objeto JSON.
+                        <br>El método <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify()</a> convierte un objeto o valor de una cadena de texto JSON, opcionalmente reemplaza valores si se indica una función de reemplazo, o si se especifican las propiedades mediante un array de reemplazo.
+                    </p>
+                    <a href="#array" class="tm-btn">Array</a>
+                </div>    
+            </div>
+        </section>
+
+        <!-- Array JS -->
+        <section class="parallax-window tm-section tm-section-services" id="array" data-parallax="scroll" data-image-src="img/bg-17.jpg">
+            <div class="tm-page-content-width">
+                <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
+                    <div class="tm-content-box-inner">
+                        <h2 class="tm-section-title tm-red-text">Array</h2>
+                        <p class="text-justify">
+                            El Array de JS es un objeto global que es usado en la construcción de arrays, que son objetos tipo lista de alto nivel.
+                            Su prototipo proporciona métodos para efectuar operaciones de recorrido y de mutación. Tanto la longitud como el tipo de los elementos de un array son variables.
+                            Dado que la longitud de un array puede cambiar en cualquier momento, y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays de JavaScript sean densos; esto depende de cómo el programador elija usarlos.
+                            En general estas características son cómodas, pero si, en su caso particular, no resultan deseables, puede considerar el uso de arrays con tipo.
+                        </p>
+                        <p class="text-justify">
+                            La sintaxis regular para declarar un array en JS es:<br>
+                            <b><i>const array_name = [item1, item2, ...];</i></b>
+                        </p>
+                        <a href="#versionesJS" class="tm-btn">Versiones JS y ECMAScript</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Versiones JS -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="versionesJS" data-parallax="scroll" data-image-src="img/bg-18.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">Versiones JS</h2>
+                    <p class="text-justify">
+                        Hay 8 versiones de JS como tal, del 1.0 al 1.7 y versión sevidor NES 2.0 y 3.0. Todas desarrolladas para, inicialmente, Netscape y, luego, Mozilla Firefox.
+                        Fue inventado por Brendan Eich en 1995, y se convirtió en el estándar ECMA en 1997.
+                        ECMAScript es el nombre oficial del lenguaje (por las siglas en inglés de la "European Computer Manufacturers Association"). Las versiones de ECMAScript son abreviadas como ES1, ES2, ES3, ES5 y ES6. Desde el 2016 las nuevas versiones se denominan por el año de publicación (ECMAScript 2016 / 2017 / 2018 / 2019).
+                    </p>
+                    <h2 class="tm-section-title">Características</h2>
+                    <p class="text-justify">
+                        Las siguientes características son comunes a todas las implementaciones que se ajustan al estándar ECMAScript, a menos que especifique explícitamente lo contrario.
+                        <ul>
+                            <li class="text-justify">
+                                <b><u>Imperativo y estructurado</u></b>. JS es compatible con gran parte de la estructura de programación de C (por ejemplo, sentencias if, bucles for, sentencias switch, etc.).
+                                Con una salvedad, en parte: en C, el ámbito de las variables alcanza al bloque en el cual fueron definidas; sin embargo, JavaScript no es compatible con esto, puesto que el ámbito de las variables es el de la función en la cual fueron declaradas.
+                                Esto cambia con la versión de ECMAScript 2015, ya que añade compatibilidad con block scoping por medio de la palabra clave let.
+                                Como en C, JavaScript hace distinción entre expresiones y sentencias.
+                                Una diferencia sintáctica con respecto a C es la inserción automática de punto y coma, es decir, en JavaScript los puntos y coma que finalizan una sentencia pueden ser omitidos.                                
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Tipado dinámico</u></b>. Como en la mayoría de lenguajes de scripting, el tipo está asociado al valor, no a la variable.
+                                Por ejemplo, una variable x en un momento dado puede estar ligada a un número y más adelante, religada a una cadena.
+                                JS es compatible con varias formas de comprobar el tipo de un objeto, incluyendo duck typing.
+                                Una forma de saberlo es por medio de la palabra clave typeof.                                
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Objetual</u></b>. JS está formado casi en su totalidad por objetos.
+                                Los objetos en JS son arrays asociativos, mejorados con la inclusión de prototipos.
+                                Los nombres de las propiedades de los objetos son claves de tipo cadena: obj.x = 10 y obj['x'] = 10 son equivalentes, siendo "azúcar sintáctico" la notación con punto.
+                                Las propiedades y sus valores pueden ser creados, cambiados o eliminados en tiempo de ejecución.
+                                La mayoría de propiedades de un objeto (y aquellas que son incluidas por la cadena de la herencia prototípica) pueden ser enumeradas por medio de la instrucción de bucle for... in.
+                                JS tiene un pequeño número de objetos predefinidos como son Function y Date.                                
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Evaluación en tiempo de ejecución</u></b>. JS incluye la función eval que permite evaluar expresiones expresadas como cadenas en tiempo de ejecución.
+                                Por ello se recomienda que eval sea utilizado con precaución y que se opte por utilizar la función JSON.parse() en la medida de lo posible, pues puede resultar mucho más segura.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Funciones de primera clase</u></b>. A las funciones se les suele llamar ciudadanos de primera clase; son objetos en sí mismos.
+                                Como tal, poseen propiedades y métodos, como .call() y .bind().
+                                Una función anidada es una función definida dentro de otra.
+                                Esta es creada cada vez que la función externa es invocada.
+                                Además, cada función creada forma una clausura; es el resultado de evaluar un ámbito conteniendo en una o más variables dependientes de otro ámbito externo, incluyendo constantes, variables locales y argumentos de la función externa llamante.
+                                El resultado de la evaluación de dicha clausura forma parte del estado interno de cada objeto función, incluso después de que la función exterior concluya su evaluación.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Prototipos</u></b>.JS usa prototipos en vez de clases para el uso de herencia.
+                                Es posible llegar a emular muchas de las características que proporcionan las clases en lenguajes orientados a objetos tradicionales por medio de prototipos en JS.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Funciones como constructores de objetos</u></b>. Las funciones también se comportan como constructores.
+                                Prefijar una llamada a la función con la palabra clave new crear una nueva instancia de un prototipo, que heredan propiedades y métodos del constructor (incluidas las propiedades del prototipo de Object).
+                                ECMAScript 5 ofrece el método Object.create, permitiendo la creación explícita de una instancia sin tener que heredar automáticamente del prototipo de Object (en entornos antiguos puede aparecer el prototipo del objeto creado como null).
+                                La propiedad prototype del constructor determina el objeto usado para el prototipo interno de los nuevos objetos creados.
+                                Se pueden añadir nuevos métodos modificando el prototipo del objeto usado como constructor.
+                                Constructores predefinidos en JavaScript, como Array u Object, también tienen prototipos que pueden ser modificados.
+                                Aunque esto sea posible se considera una mala práctica modificar el prototipo de Object ya que la mayoría de los objetos en JS heredan los métodos y propiedades del objeto prototype, objetos los cuales pueden esperar que estos no hayan sido modificados.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Entorno de ejecución</u></b>. JS normalmente depende del entorno en el que se ejecute para ofrecer objetos y métodos por los que los scripts pueden interactuar con el "mundo exterior".
+                                De hecho, depende del entorno para ser capaz de proporcionar la capacidad de incluir o importar scripts (por ejemplo, en HTML por medio de la etiqueta script).
+                                (Esto no es una característica del lenguaje, pero es común en la mayoría de las implementaciones de JS.)
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Funciones variádicas</u></b>. Un número indefinido de parámetros pueden ser pasados a la función.
+                                La función puede acceder a ellos a través de los parámetros o también a través del objeto local argumentos.
+                                Las funciones variádicas también pueden ser creadas usando el método .apply().                                
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Funciones como métodos</u></b>. A diferencia de muchos lenguajes orientados a objetos, no hay distinción entre la definición de función y la definición de método.
+                                Más bien, la distinción se produce durante la llamada a la función; una función puede ser llamada como un método.
+                                Cuando una función es llamada como un método de un objeto, la palabra clave this, que es una variable local a la función, representa al objeto que invocó dicha función.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Arrays y la definición literal de objetos</u></b>. Al igual que muchos lenguajes de script, arrays y objetos (arrays asociativos en otros idiomas) pueden ser creados con una sintaxis abreviada.
+                                De hecho, estos literales forman la base del formato de datos JSON.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Expresiones regulares</u></b>. JS también es compatible con expresiones regulares de una manera similar a Perl, que proporcionan una sintaxis concisa y poderosa para la manipulación de texto que es más sofisticado que las funciones incorporadas a los objetos de tipo string.
+                            </li>
+                            <li class="text-justify">
+                                <b><u>Extensiones específicas del fabricante</u></b>. JS se encuentra oficialmente bajo la organización de Mozilla Foundation, y periódicamente se añaden nuevas características del lenguaje.
+                                Sin embargo, sólo algunos motores JavaScript son compatibles con estas características:
+                                <ol>
+                                    <li class="text-justify">
+                                        Las propiedades get y set (también compatibles con WebKit, Opera, ActionScript y Rhino).
+                                    </li>
+                                    <li class="text-justify">
+                                        Cláusulas catch condicionales.
+                                    </li>
+                                    <li class="text-justify">
+                                        Protocolo iterador adoptado de Python.
+                                    </li>
+                                    <li class="text-justify">
+                                        Corrutinas también adoptadas de Python.
+                                    </li>
+                                    <li class="text-justify">
+                                        Generación de listas y expresiones por comprensión también adoptado de Python.
+                                    </li>
+                                    <li class="text-justify">
+                                        Establecer el ámbito a bloque a través de la palabra clave let.
+                                    </li>
+                                    <li class="text-justify">
+                                        Desestructuración de arrays y objetos (forma limita de emparejamiento de patrones).
+                                    </li>
+                                    <li class="text-justify">
+                                        Expresiones concretas en funciones (function(args) expr).
+                                    </li>
+                                    <li class="text-justify">
+                                        ECMAScript para XML (E4X), una extensión que añade compatibilidad nativa XML a ECMAScript.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <a href="#firefox" class="tm-btn">Firefox Developer Edition</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Firefox Developer Edition -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="firefox" data-parallax="scroll" data-image-src="img/bg-19.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">Versiones JS</h2>
+                    <p class="text-justify">
+                        Firefox Developer Edition es una versión de Firefox adaptada para desarrolladores, ofreciendo las últimas características y herramientas de desarrollo experimental.
+                        La actual edición de desarrollo (Firefox Developer Edition) incluye estos cambios en las herramientas de desarrollador:
+                    </p>
+                    <ul>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Console_messages#server">Registro del servidor en la Consola Web</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_CSS#overridden_declarations">Busqueda rápida de la regla sobre escrita en la declaración del CSS</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_HTML#element_popup_menu">"Usar en Consola" en el item de menu contextual en el Inspector</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_CSS#strict_search">Opción "estricto" para filtrado en las reglas de la vista</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Console_messages#network">Entradas de red en la Consola ahora enlaza al Monitor de Red</a>.
+                        </li>
+                        <li class="text-justify">
+                            Nueva barra lateral UI para WebIDE
+                        </li>
+                        <li class="text-justify">
+                            Herramientas de autorización para sitios web y aplicaciones web.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Scratchpad">Scratchpad</a> Un editor construido dentro de Firefox que te permite escribir y ejecutar JS.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Style_Editor">Editor de estilos</a>Revisa y edita estilos CSS para la página actual.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Shader_Editor">Editor de sombras</a> Revisa y edita los vertex y fragmentos de sombras usado por <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">WebGL</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Audio_Editor">Editor de audio web</a> Examina el gráfico de los nodos de audio en un contexto de audio y modifica sus parámetros.
+                        </li>
+                    </ul>
+                    <p>
+                        Entre muchas otras herramientas de exploración, debugging, móvil, rendimiento y diagnóstico.
+                    </p>
+                    <a href="#webgl" class="tm-btn">WebGL</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WebGL -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="webgl" data-parallax="scroll" data-image-src="img/bg-20.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">WebGL</h2>
+                    <p class="text-justify">
+                        WebGL (Web Graphics Library) es una API JS para renderear gráficos 3D y 2D interactivos de alto desempeño dentro de cualquier navegador web compatible sin necesidad de usar plug-ins.
+                        WebGL hace esto al introducir una API que conforma el OpenGL ES 2.0 el cual puede ser usado en los elementos canvas de HTML. Esto hace posible que la API tome ventaja del hardware de aceleración de gráficos del dispositivo usuario.
+                        WebGL es soportado actualmente en Firefox 4+, Google Chrome 9+, Opera 12+, Safari 5.1+, Internet Explorer 11+, and Microsoft Edge build 10240+; sin embargo, el hardware del dispositivo usuario debe también soportar estas características.
+                        La <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">API de WebGL</a> 2 introduce soporte para la mayoría de las características del OpenGL ES 3.0; esto a través de la interface "WebGL2RenderingContext".
+                        El elemento canvas también es usado por la API de Canvas para hacer gráficos en 2D dentro de las páginas web.
+                    </p>
+                    <p class="text-justify">
+                        Entre muchas otras interfaces estándar, extensiones, eventos, constantes y tipos.
+                    </p>
+                    <a href="#apigames" class="tm-btn">APIs for Game Development</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- APIs for Game Development -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="apigames" data-parallax="scroll" data-image-src="img/bg-21.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">APIs for Game Development</h2>
+                    <p class="text-justify">
+                        Existen varias APIs para desarrollo de videojuegos, a continuación enlistaré unas cuantas:
+                    </p>
+                    <ul>
+                        <li class="text-justify">
+                            <a href="https://callofdutyapi.com/">Call of Duty: Modern Warfare API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://api.rawg.io/docs/">RAWG Video Games Database API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="http://api-docs.frameryacoustics.com/">"Chicken Coop API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://pogoapi.net/documentation/">Pokemon Go API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://pokeapi.co/">PokeAPI</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://www.igdb.com/api">IGDB API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://steamcommunity.com/dev">SteamWeb API</a>
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://docs.opendota.com/">Dota2 API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://developer.riotgames.com/">League of Legends API</a>.
+                        </li>
+                        <li class="text-justify">
+                            <a href="https://www.minecraft.net/en-us/article/scripting-api-now-public-beta">Minecraft API</a>.
+                        </li>
+                    </ul>
+                    <p>
+                        Entre muchas otras API's y frameworks para desarrollo de videojuegos.
+                    </p>
+                    <a href="#websockets" class="tm-btn">Websockets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Websockets -->
+        <section class="parallax-window tm-section tm-section-gallery tm-flex" id="websockets" data-parallax="scroll" data-image-src="img/bg-22.jpg">
+            <div class="tm-page-content-width tm-flex-col tm-gallery-content">
+                <div class="tm-content-box-inner">
+                    <h2 class="tm-section-title">¿Qué son los Websockets?</h2>
+                    <p class="text-justify">
+                        WebSocket es un protocolo de red basado en TCP que establece cómo deben intercambiarse datos entre redes.
+                        Puesto que es un protocolo fiable y eficiente, es utilizado por prácticamente todos los clientes.
+                        El protocolo TCP establece conexiones entre dos puntos finales de comunicación, llamados sockets.
+                        De esta manera, el intercambio de datos puede producirse en las dos direcciones.
+                        En las conexiones bidireccionales, como las que crea WebSocket (a veces también websocket o web socket), se intercambian datos en ambas direcciones al mismo tiempo.
+                        La ventaja de este intercambio es que se accede de forma más rápida a los datos.
+                        En concreto, WebSocket permite así una comunicación directa entre una aplicación web y un servidor WebSocket.
+                        En otras palabras: la web que se solicita se muestra en tiempo real.
+                    </p>
+                    <a href="#contact" class="tm-btn">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="parallax-window tm-section tm-section-contact" id="contact" data-parallax="scroll" data-image-src="img/bg-04.jpg">
             <div class="tm-copyright-div">
-                <p class="tm-copyright-text">Copyright &copy; <span class="tm-current-year">2020</span> Your Company 
-                
-                - Design: TemplateMo</p>
+                <p class="tm-copyright-text"> &copy; <span class="tm-current-year">2020</span> Copyright & Design: TemplateMo</p>
             </div>                
         </section>
     </div>
